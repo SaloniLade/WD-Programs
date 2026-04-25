@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            margin: 0;
+            padding: 0;
+        }
+
+        .form-container {
+            width: 450px;
+            margin: 50px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0px 8px 20px rgba(0,0,0,0.2);
+        }
+
+        .form-container h2 {
+            text-align: center;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .student-info {
+            text-align: center;
+            margin-bottom: 20px;
+            font-weight: bold;
+            color: #444;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        td {
+            padding: 10px;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="tel"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            outline: none;
+            font-size: 14px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            width: 45%;
+            padding: 12px;
+            margin: 10px 5px;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        input[type="submit"] {
+            background-color: #28a745;
+        }
+
+        input[type="reset"] {
+            background-color: #dc3545;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Employee Registration Form</h2>
+
+    <div class="student-info">
+        Name: Saloni Nandkumar Lade<br>
+        Roll No: 131
+    </div>
+
+    <form>
+        <table>
+            <tr>
+                <td>Employee Name</td>
+                <td><input type="text" placeholder="Enter your name"></td>
+            </tr>
+
+            <tr>
+                <td>Email</td>
+                <td><input type="email" placeholder="Enter your email"></td>
+            </tr>
+
+            <tr>
+                <td>Password</td>
+                <td><input type="password" placeholder="Enter password"></td>
+            </tr>
+
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <input type="radio" name="gender"> Male
+                    <input type="radio" name="gender"> Female
+                </td>
+            </tr>
+
+            <tr>
+                <td>Department</td>
+                <td>
+                    <select>
+                        <option>Select Department</option>
+                        <option>HR</option>
+                        <option>IT</option>
+                        <option>Finance</option>
+                        <option>Marketing</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Skills</td>
+                <td>
+                    <input type="checkbox"> HTML
+                    <input type="checkbox"> Java
+                    <input type="checkbox"> Python
+                </td>
+            </tr>
+
+            <tr>
+                <td>Address</td>
+                <td><textarea rows="3" placeholder="Enter address"></textarea></td>
+            </tr>
+
+            <tr>
+                <td>Contact</td>
+                <td><input type="tel" placeholder="Enter contact number"></td>
+            </tr>
+
+            <tr>
+                <td colspan="2" style="text-align:center;">
+                    <input type="submit" value="Register">
+                    <input type="reset" value="Clear">
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+</body>
+</html>
